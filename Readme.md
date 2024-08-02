@@ -2,6 +2,36 @@
 
 ![quine.png](quine.png)
 
+# Building
+
+## Building manually
+Copy the output below (section: The Quine) into a file `quine.rs` and compile with:
+```
+rustc -o quine.exe quine.rs
+```
+Then run with:
+```
+./quine.exe
+```
+Works on both LInux and Windows.
+
+
+## OR: Using the build scripts
+
+- Windows
+
+    ```
+    build.bat
+    ```
+
+- Unix
+    ```
+    ./build.sh
+    ```
+
+Both generate a binary named `stage2`.
+
+# The Quine
 
 ```
 use std::ffi::{c_int, c_ulong, c_ushort}; #[cfg(target_os = "windows")] fn init_vt(required_width: usize, required_height: usize) { use std::ffi::{c_void, c_short}; type HANDLE = *mut c_void; type DW = c_ulong; type BOOL = c_int; /***/
