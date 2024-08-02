@@ -13,7 +13,7 @@ Then run with:
 ```
 ./quine.exe
 ```
-Works on both LInux and Windows.
+Works on both Linux and Windows.
 
 
 ## OR: Using the build scripts
